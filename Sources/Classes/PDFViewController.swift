@@ -88,7 +88,7 @@ public final class PDFViewController: UIViewController {
      var currentPageIndex: Int = 0
     
     /// Bottom thumbnail controller
-    private var thumbnailCollectionController: PDFThumbnailCollectionViewController?
+    var thumbnailCollectionController: PDFThumbnailCollectionViewController?
     
     /// UIBarButtonItem used to override the default action button
      var actionButton: UIBarButtonItem?
