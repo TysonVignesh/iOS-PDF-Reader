@@ -71,10 +71,10 @@ public final class PDFViewController: UIViewController {
     @IBOutlet var thumbnailCollectionControllerHeight: NSLayoutConstraint!
     
     /// Distance between the bottom thumbnail bar with bottom of page (used to hide/show)
-    @IBOutlet private var thumbnailCollectionControllerBottom: NSLayoutConstraint!
+    @IBOutlet var thumbnailCollectionControllerBottom: NSLayoutConstraint!
     
     /// Width of the thumbnail bar (used to resize on rotation events)
-    @IBOutlet private var thumbnailCollectionControllerWidth: NSLayoutConstraint!
+    @IBOutlet var thumbnailCollectionControllerWidth: NSLayoutConstraint!
     
     /// PDF document that should be displayed
      var document: PDFDocument!
