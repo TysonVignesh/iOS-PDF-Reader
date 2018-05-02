@@ -20,13 +20,13 @@ internal final class PDFPageView: UIScrollView {
     private var tiledPDFView: TiledView
     
     /// Current scale of the scrolling view
-    private var scale: CGFloat
+    var scale: CGFloat
     
     /// Number of zoom levels possible when double tapping
     private let zoomLevels: CGFloat = 2
     
     /// View which contains all of our content
-    private var contentView: UIView
+    var contentView: UIView
     
     /// A low resolution image of the PDF page that is displayed until the TiledPDFView renders its content.
     private let backgroundImageView: UIImageView

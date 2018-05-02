@@ -68,7 +68,7 @@ public final class PDFViewController: UIViewController {
     @IBOutlet public var collectionView: UICollectionView!
     
     /// Height of the thumbnail bar (used to hide/show)
-    @IBOutlet private var thumbnailCollectionControllerHeight: NSLayoutConstraint!
+    @IBOutlet var thumbnailCollectionControllerHeight: NSLayoutConstraint!
     
     /// Distance between the bottom thumbnail bar with bottom of page (used to hide/show)
     @IBOutlet private var thumbnailCollectionControllerBottom: NSLayoutConstraint!
@@ -77,24 +77,24 @@ public final class PDFViewController: UIViewController {
     @IBOutlet private var thumbnailCollectionControllerWidth: NSLayoutConstraint!
     
     /// PDF document that should be displayed
-    private var document: PDFDocument!
+     var document: PDFDocument!
     
-    private var actionStyle = ActionStyle.print
+     var actionStyle = ActionStyle.print
     
     /// Image used to override the default action button image
     private var actionButtonImage: UIImage?
     
     /// Current page being displayed
-    private var currentPageIndex: Int = 0
+     var currentPageIndex: Int = 0
     
     /// Bottom thumbnail controller
     private var thumbnailCollectionController: PDFThumbnailCollectionViewController?
     
     /// UIBarButtonItem used to override the default action button
-    private var actionButton: UIBarButtonItem?
+     var actionButton: UIBarButtonItem?
     
     /// Backbutton used to override the default back button
-    private var backButton: UIBarButtonItem?
+     var backButton: UIBarButtonItem?
     
     /// Background color to apply to the collectionView.
     public var backgroundColor: UIColor? = .lightGray {
@@ -104,7 +104,7 @@ public final class PDFViewController: UIViewController {
     }
     
     /// Whether or not the thumbnails bar should be enabled
-    private var isThumbnailsEnabled = true {
+     var isThumbnailsEnabled = true {
         didSet {
             if thumbnailCollectionControllerHeight == nil {
                 _ = view

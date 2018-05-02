@@ -29,7 +29,7 @@ internal final class PDFPageCollectionViewCell: UICollectionViewCell {
     }
     
     /// Delegate informed of important events
-    private weak var pageCollectionViewCellDelegate: PDFPageCollectionViewCellDelegate?
+    weak var pageCollectionViewCellDelegate: PDFPageCollectionViewCellDelegate?
     
     
     /// Customizes and sets up the cell to be ready to be displayed
